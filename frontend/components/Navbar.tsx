@@ -7,9 +7,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-24 items-center">
           <div className="flex-shrink-0 flex items-center group cursor-pointer">
-            <Link href="/" className="text-3xl font-black tracking-tighter flex items-center gap-1">
-              <span className="text-white drop-shadow-md group-hover:text-gray-200 transition-colors">Phonix</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-blue-light to-cyan-300 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] group-hover:drop-shadow-[0_0_12px_rgba(56,189,248,0.8)] transition-all">
+            <Link href="/" className="text-3xl font-black tracking-tighter flex items-center gap-1 group-hover:scale-105 transition-transform duration-300">
+              <span className="text-[#00a2ff] drop-shadow-[0_0_10px_rgba(0,162,255,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(0,162,255,1)] transition-all">
+                Phonix
+              </span>
+              <span className="text-[#00e5ff] drop-shadow-[0_0_10px_rgba(0,229,255,0.8)] group-hover:drop-shadow-[0_0_15px_rgba(0,229,255,1)] transition-all">
                 Laundry
               </span>
             </Link>

@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import LocationPicker from './LocationPicker';
-import PaymentSection from './PaymentSection';
 
 export default function BookingForm() {
   const [formData, setFormData] = useState({
@@ -144,8 +143,6 @@ export default function BookingForm() {
         {formData.logistics === 'Pickup & Delivery' && (
           <LocationPicker onLocationSelect={setLocation} />
         )}
-
-        <PaymentSection />
 
         <button
           type="submit"

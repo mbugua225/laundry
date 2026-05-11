@@ -39,26 +39,16 @@ export default function HeroCarousel() {
       ))}
 
       {/* Hero Content aligned to the screenshot style */}
-      <div className="absolute inset-0 flex flex-col justify-start items-center text-center px-4 z-10 pt-[25%] md:pt-[20%]">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase flex flex-col md:flex-row gap-4 items-center">
-          <span className="text-white drop-shadow-[0_4px_8px_rgba(0,0,0,1)]">Phonix</span>
-          <span 
-            className="text-primary-blue-light pr-2" 
-            style={{ textShadow: '0 0 20px rgba(56,189,248,1), 0 0 40px rgba(56,189,248,0.8), 0 4px 8px rgba(0,0,0,1)' }}
-          >
-            Laundry
-          </span>
-        </h1>
-        <p className="text-xl md:text-3xl text-gray-100 max-w-3xl font-bold tracking-wide shadow-black drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] mt-6">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
+        <p className="text-2xl md:text-4xl text-white max-w-3xl font-black tracking-wide shadow-black drop-shadow-[0_4px_8px_rgba(0,0,0,1)] mb-8">
           Crystal Clean Laundry. Freshness You Can Feel.
         </p>
-      </div>
 
-      <div className="absolute inset-0 flex flex-col justify-start items-center text-center px-4 z-10 pt-[75%] md:pt-[60%]">
-        <div className="bg-primary-blue-dark/90 text-white px-8 py-3 rounded-full font-bold text-xl shadow-[0_0_30px_rgba(2,132,199,0.8)] border border-primary-blue-light/50 hover:bg-primary-blue transition-colors cursor-pointer animate-bounce backdrop-blur-sm mb-4">
+        <div className="bg-primary-blue-dark/90 text-white px-8 py-4 rounded-full font-bold text-xl md:text-2xl shadow-[0_0_30px_rgba(2,132,199,0.8)] border border-primary-blue-light/50 hover:bg-primary-blue transition-colors cursor-pointer animate-bounce backdrop-blur-sm mb-6">
           Clothes Starting at only Ksh 70 per kg
         </div>
-        <div className="bg-green-600/90 text-white px-8 py-3 rounded-full font-bold text-lg shadow-[0_0_30px_rgba(22,163,74,0.8)] border border-green-400/50 hover:bg-green-500 transition-colors cursor-pointer backdrop-blur-sm animate-pulse">
+        
+        <div className="bg-green-600/90 text-white px-8 py-3 rounded-full font-bold text-lg md:text-xl shadow-[0_0_30px_rgba(22,163,74,0.8)] border border-green-400/50 hover:bg-green-500 transition-colors cursor-pointer backdrop-blur-sm">
           Duvets Starting at only Ksh 500
         </div>
       </div>
