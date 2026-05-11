@@ -23,7 +23,7 @@ export default function BookingForm() {
     e.preventDefault();
     setStatus('submitting');
     try {
-      await axios.post('http://localhost:5000/api/bookings', {
+      await axios.post('/api/bookings', {
         ...formData,
         location,
       });

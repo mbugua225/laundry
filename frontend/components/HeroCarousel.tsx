@@ -35,29 +35,31 @@ export default function HeroCarousel() {
             className="object-cover object-center"
             priority={index === 0}
           />
-          {/* Dark gradient overlay to make text pop */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
         </div>
       ))}
 
       {/* Hero Content aligned to the screenshot style */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10 pt-20">
-        <div className="glass-panel px-12 py-8 rounded-3xl mb-8 transform hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(14,165,233,0.2)] border border-white/5 backdrop-blur-xl">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase flex flex-col md:flex-row gap-4 items-center">
-            <span className="text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">Phonix</span>
-            <span 
-              className="text-primary-blue-light pr-2" 
-              style={{ textShadow: '0 0 20px rgba(56,189,248,0.8), 0 0 40px rgba(56,189,248,0.4), 0 4px 4px rgba(0,0,0,0.8)' }}
-            >
-              Laundry
-            </span>
-          </h1>
-        </div>
-        <p className="text-xl md:text-3xl text-gray-100 max-w-3xl font-medium tracking-wide shadow-black drop-shadow-lg mb-8">
+      <div className="absolute inset-0 flex flex-col justify-start items-center text-center px-4 z-10 pt-[25%] md:pt-[20%]">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight uppercase flex flex-col md:flex-row gap-4 items-center">
+          <span className="text-white drop-shadow-[0_4px_8px_rgba(0,0,0,1)]">Phonix</span>
+          <span 
+            className="text-primary-blue-light pr-2" 
+            style={{ textShadow: '0 0 20px rgba(56,189,248,1), 0 0 40px rgba(56,189,248,0.8), 0 4px 8px rgba(0,0,0,1)' }}
+          >
+            Laundry
+          </span>
+        </h1>
+        <p className="text-xl md:text-3xl text-gray-100 max-w-3xl font-bold tracking-wide shadow-black drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] mt-6">
           Crystal Clean Laundry. Freshness You Can Feel.
         </p>
-        <div className="bg-primary-blue-dark text-white px-8 py-4 rounded-full font-bold text-xl shadow-[0_0_30px_rgba(2,132,199,0.8)] border border-primary-blue-light/50 hover:bg-primary-blue transition-colors cursor-pointer animate-bounce">
-          Starting at only Ksh 70 per kg
+      </div>
+
+      <div className="absolute inset-0 flex flex-col justify-start items-center text-center px-4 z-10 pt-[75%] md:pt-[60%]">
+        <div className="bg-primary-blue-dark/90 text-white px-8 py-3 rounded-full font-bold text-xl shadow-[0_0_30px_rgba(2,132,199,0.8)] border border-primary-blue-light/50 hover:bg-primary-blue transition-colors cursor-pointer animate-bounce backdrop-blur-sm mb-4">
+          Clothes Starting at only Ksh 70 per kg
+        </div>
+        <div className="bg-green-600/90 text-white px-8 py-3 rounded-full font-bold text-lg shadow-[0_0_30px_rgba(22,163,74,0.8)] border border-green-400/50 hover:bg-green-500 transition-colors cursor-pointer backdrop-blur-sm animate-pulse">
+          Duvets Starting at only Ksh 500
         </div>
       </div>
 
