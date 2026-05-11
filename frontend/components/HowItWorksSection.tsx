@@ -58,11 +58,11 @@ export default function HowItWorksSection() {
           <div className="w-full lg:w-1/2 flex justify-center relative">
             <div className="absolute inset-0 bg-primary-blue/10 rounded-[100px] rotate-12 blur-[60px] -z-10" />
             <Image
-              src="/images/phone.png"
-              alt="Phone App Interface"
+              src="/images/phone.jpg"
+              alt="Phone Booking"
               width={450}
               height={600}
-              className="object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.8)]"
+              className="object-cover rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.8)] border border-white/10 hover:scale-105 transition-transform duration-500"
             />
           </div>
 

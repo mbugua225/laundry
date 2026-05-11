@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const images = [
-  '/images/a.jpg',
-  '/images/b.jpg',
-  '/images/c.jpg',
+  '/images/bike.jpg',
+  '/images/car.jpg',
+  '/images/van.jpg',
 ];
 
 export default function HeroCarousel() {
@@ -39,17 +39,19 @@ export default function HeroCarousel() {
       ))}
 
       {/* Hero Content aligned to the screenshot style */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
-        <p className="text-2xl md:text-4xl text-white max-w-3xl font-black tracking-wide shadow-black drop-shadow-[0_4px_8px_rgba(0,0,0,1)] mb-8">
+      <div className="absolute bottom-16 left-4 md:left-12 z-10 text-left w-full max-w-4xl pr-4">
+        <p className="text-2xl md:text-4xl text-white font-black tracking-wide shadow-black drop-shadow-[0_4px_8px_rgba(0,0,0,1)] mb-6">
           Crystal Clean Laundry. Freshness You Can Feel.
         </p>
 
-        <div className="bg-primary-blue-dark/90 text-white px-8 py-4 rounded-full font-bold text-xl md:text-2xl shadow-[0_0_30px_rgba(2,132,199,0.8)] border border-primary-blue-light/50 hover:bg-primary-blue transition-colors cursor-pointer animate-bounce backdrop-blur-sm mb-6">
-          Clothes Starting at only Ksh 70 per kg
-        </div>
-        
-        <div className="bg-green-600/90 text-white px-8 py-3 rounded-full font-bold text-lg md:text-xl shadow-[0_0_30px_rgba(22,163,74,0.8)] border border-green-400/50 hover:bg-green-500 transition-colors cursor-pointer backdrop-blur-sm">
-          Duvets Starting at only Ksh 500
+        <div className="flex flex-col sm:flex-row gap-4 items-start">
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-full font-bold text-lg md:text-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:bg-white/20 transition-colors cursor-pointer">
+            Clothes Starting at only Ksh 70 per kg
+          </div>
+          
+          <div className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-full font-bold text-lg md:text-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:bg-white/20 transition-colors cursor-pointer">
+            Duvets Starting at only Ksh 500
+          </div>
         </div>
       </div>
 

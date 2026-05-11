@@ -21,6 +21,9 @@ export default function Navbar() {
             <Link href="/pricing" className="text-gray-300 hover:text-white transition-all text-lg font-bold px-4 py-2 border border-transparent hover:border-white/20 rounded-lg hover:bg-white/5">
               Services & Pricing
             </Link>
+            <Link href="/#book" className="text-gray-300 hover:text-white transition-all text-lg font-bold px-4 py-2 border border-transparent hover:border-white/20 rounded-lg hover:bg-white/5">
+              Pickup
+            </Link>
             <Link href="/#contact" className="text-gray-300 hover:text-white transition-all text-lg font-bold px-4 py-2 border border-transparent hover:border-white/20 rounded-lg hover:bg-white/5">
               Contact
             </Link>

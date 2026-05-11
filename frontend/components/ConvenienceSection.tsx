@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ConvenienceSection() {
   return (
-    <section className="bg-[var(--surface-dark)] py-16 md:py-24 relative overflow-hidden">
+    <section className="bg-[var(--surface-dark)] pt-4 md:pt-8 pb-16 md:pb-24 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary-blue opacity-5 blur-[100px] pointer-events-none" />
       
@@ -13,11 +13,11 @@ export default function ConvenienceSection() {
           <div className="w-full lg:w-1/2 flex justify-center relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary-blue/20 to-transparent rounded-full blur-[80px] -z-10" />
             <Image
-              src="/images/scooter.png"
-              alt="Delivery Scooter"
+              src="/images/convient.jpg"
+              alt="Convenience"
               width={600}
               height={600}
-              className="object-contain hover:scale-105 transition-transform duration-700 ease-out drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+              className="object-cover rounded-2xl hover:scale-105 transition-transform duration-700 ease-out shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
             />
           </div>
 

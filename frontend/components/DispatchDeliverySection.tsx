@@ -12,11 +12,11 @@ export default function DispatchDeliverySection() {
             {/* Soft glow behind the bag */}
             <div className="absolute inset-0 bg-blue-900/20 rounded-full blur-[100px] -z-10" />
             <Image
-              src="/images/bag.png"
-              alt="Premium Laundry Bag"
+              src="/images/clothes.jpg"
+              alt="Dispatch and Delivery"
               width={600}
               height={600}
-              className="object-contain hover:-translate-y-2 transition-transform duration-500 drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]"
+              className="object-cover rounded-3xl hover:-translate-y-2 transition-transform duration-500 shadow-[0_20px_40px_rgba(0,0,0,0.6)] border border-white/5"
             />
           </div>
 

@@ -3,7 +3,7 @@ import { Phone } from 'lucide-react';
 
 export default function ContactPills() {
   return (
-    <section className="bg-[var(--surface-dark)] py-12 border-b border-[var(--surface-border)]">
+    <section className="bg-[var(--surface-dark)] py-4 relative z-30">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#1a1a1a] rounded-2xl shadow-2xl p-6 md:p-10 border border-gray-800 flex flex-col lg:flex-row items-center justify-between gap-6 transform -translate-y-16 lg:-translate-y-24 relative z-30">
           

@@ -15,15 +15,23 @@ export default function PricingPage() {
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
       
-      <main className="flex-grow pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">
-            Services & <span className="text-primary-blue-light drop-shadow-[0_0_15px_rgba(56,189,248,0.4)]">Pricing</span>
-          </h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Transparent pricing for crystal clean results. Choose the service that fits your needs.
-          </p>
+      <main className="flex-grow pb-20 w-full">
+        <div 
+          className="w-full h-[40vh] md:h-[50vh] relative bg-fixed bg-center bg-cover flex items-center justify-center border-b border-[var(--surface-border)]"
+          style={{ backgroundImage: 'url(/images/bag.jpg)' }}
+        >
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]" />
+          <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 uppercase tracking-tight drop-shadow-[0_4px_10px_rgba(0,0,0,1)]">
+              Services & <span className="text-primary-blue-light drop-shadow-[0_0_20px_rgba(56,189,248,0.8)]">Pricing</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-200 font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              Transparent pricing for crystal clean results. Choose the service that fits your needs.
+            </p>
+          </div>
         </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pricingData.map((item, index) => (
@@ -56,6 +64,7 @@ export default function PricingPage() {
           <a href="/#contact" className="inline-block bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors">
             Contact Us
           </a>
+        </div>
         </div>
       </main>
 
